@@ -4,7 +4,6 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
- 
 }
 
 .grid-container {
@@ -17,7 +16,7 @@ body {
 /* Navigation Bar */
 nav {
   grid-column: 1 / -1;
-  background-color: #333;
+  background-color: #565a5c;
   color: white;
 }
 
@@ -38,9 +37,9 @@ nav {
 
 .nav-list li {
   margin: 0 10px;
-  padding:5px;
-
+  padding: 5px;
 }
+
 .nav-list li:hover {
   background-color: rgb(255, 255, 255);
 }
@@ -48,7 +47,7 @@ nav {
 /* Hero Section */
 .hero-container {
   grid-column: 1 / -1;
-  background-color: #333;
+  background-color: #565a5c;
   background: url('./assets/images/hero.jpg') no-repeat center center/cover;
   height: 400px;
   display: flex;
@@ -62,7 +61,6 @@ nav {
   font-weight: bold;
 }
 
- 
 /* Specials Section */
 .specials-section {
   grid-column: 2 / span 10;
@@ -72,40 +70,38 @@ nav {
   padding: 20px;
   margin-top: 80px;
   gap: 20px;
-  height: 500px;
-  padding: 20px;
- 
 }
 
-
 .specials-header {
-  text-align: center;
-  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 130%;
+  letter-spacing: 0.031rem;
+  text-transform: uppercase;
+  font-size: 2.25rem;
   font-family: 'Roboto Slab', 'Courier New', serif;
-  font-size: 2rem
+  color: #565a5c;
 }
 
 .specials-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
-   width: 100%;
+  gap: 43px;
+  width: 100%;
   padding: 50px;
 }
 
 .card-container {
-  background: linear-gradient(330.17deg, #050505,rgb(68, 201, 34));
+  background: linear-gradient(330.17deg, #184526, rgb(68, 201, 34));
   padding: 20px;
   border-radius: 4px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 320px;
   align-items: center;
-  
 }
- 
+
 .card-title {
   font-size: 24px;
   font-weight: bold;
@@ -113,7 +109,7 @@ nav {
   color: white;
   font-family: 'Barlow Condensed', 'Arial Narrow', 'Roboto Condensed', 'Open Sans Condensed', sans-serif;
 }
- 
+
 .card-price {
   font-size: 4rem;
   font-weight: bold;
@@ -151,15 +147,13 @@ nav {
   font-size: 18px;
 }
 
-
- 
 /* Merch Section */
 .merch-container {
   grid-column: 2 / 12;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   margin-top: 100px;
 }
 
@@ -171,8 +165,10 @@ nav {
 }
 
 .merch-image {
-  flex: 1;
-  margin-right: 20px;
+  flex: 2;
+  display: flex;
+   margin-top: 80px;
+   margin-right: 20px;
 }
 
 .merch-image img {
@@ -180,15 +176,17 @@ nav {
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .merch-text {
-  font-weight: bold;
-  display: flex;
-  align-self: center;
-  font-size: 2rem;
-  margin-bottom: 3em;
+  font-weight: 800;
+  line-height: 130%;
+  letter-spacing: 0.031rem;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-family: 'Roboto Slab', 'Courier New', serif;
+  color: #565a5c;
 }
 
 .merch-description {
@@ -208,37 +206,18 @@ nav {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  margin-top: auto;
+  font-size: 18px;
 }
 
 .merch-button:hover {
   background-color: #555;
 }
 
-/* Media Query */
-@media (max-width: 768px) {
-  .merch-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .merch-image {
-    margin-right: 0;
-    margin-bottom: 20px; /* Adjust spacing between image and description */
-  }
-
-  .merch-description {
-    text-align: center;
-  }
-}
-
-
-
-
-
 /* Footer */
 .footer-container {
   grid-column: 1 / -1;
-  background-color: #333;
+  background-color:#565a5c;
   color: white;
   padding: 20px;
   text-align: center;
@@ -246,16 +225,13 @@ nav {
 
 /* Media Queries */
 @media (max-width: 1200px) {
-  .specials-container, .merch-cards {
-    grid-template-columns: repeat(2, 1fr);
+  .specials-section, .merch-container {
+    grid-column: 1 / -1;
+    padding: 20px 50px;
   }
 }
 
 @media (max-width: 768px) {
-  .specials-container, .merch-cards {
-    grid-template-columns: 1fr;
-  }
-
   .nav-list {
     flex-direction: column;
     text-align: center;
@@ -265,8 +241,30 @@ nav {
     font-size: 36px;
   }
 
+  .specials-section, .merch-container {
+    padding: 20px;
+  }
+
+  .merch-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .merch-image {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .merch-description {
+    text-align: center;
+  }
+
   .merch-text {
-    font-size: 28px;
+    font-size: 2rem;
+  }
+
+  .specials-header {
+    font-size: 2rem;
   }
 }
 
@@ -275,15 +273,24 @@ nav {
     font-size: 24px;
   }
 
-  .card-container {
+  .specials-section, .merch-container {
     padding: 10px;
+  }
+
+  .specials-header, .merch-text {
+    font-size: 1.5rem;
   }
 
   .card-title {
     font-size: 20px;
   }
 
-  .merch-text {
-    font-size: 24px;
+  .specials-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    padding: 10px;
   }
 }

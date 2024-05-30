@@ -5,7 +5,9 @@ import merch from '../assets/images/merch.jpg'
 function Merch() {
   return (
     <div className="merch-container">
-      <div className="merch-text">Check out our Merch!</div>
+      <div className="merch-text">
+      Check out our Merch
+      </div>
       <div className="merch-content">
         <div className="merch-image">
           <img src={merch} alt="Merchandise" />

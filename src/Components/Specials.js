@@ -5,7 +5,7 @@ function Specials() {
   return (
     <section className="specials-section">
       <div className="specials-header">
-        <h1>Special Deals</h1>
+        Special Deals
       </div>
       <div className="specials-container">
         <div className="card-container">
