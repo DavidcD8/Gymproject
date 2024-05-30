@@ -1,71 +1,216 @@
-*{
-  padding: 0;
+/* General Styles */
+body {
   margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-
-body{
-  height: 100vh;
-  background-color: rgb(190, 190, 190);
-
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
-
 
 /* Navigation Bar */
 nav {
-  background-color: #fff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: end;
-  list-style-type: none;
-  flex-grow: 1;
+  grid-column: 1 / -1;
+  background-color: #333;
+  color: white;
 }
 
 .nav-list {
   display: flex;
+  justify-content: space-around;
   list-style-type: none;
-  flex-wrap: wrap;
-}
-
-.logo-item {
-  margin-right: auto;
-}
-
-.logo {
-  width: 200px;
-  height: 50px;
-}
-
-.nav-list li {
-  margin-left: 2rem;
-
+  margin: 0;
+  padding: 5px 80px;
 }
 
 .nav-list a {
+  color: white;
   text-decoration: none;
-  color: #333;
+  color: rgb(68, 201, 34);
   font-weight: bold;
-  padding: 10px 
+}
 
+.nav-list li {
+  margin: 0 10px;
+  padding:5px;
+
+}
+.nav-list li:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Hero Section */
+.hero-container {
+  grid-column: 1 / -1;
+  background-color: #333;
+  background: url('./assets/images/hero.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-text {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* Specials Section */
+.specials-container {
+  grid-column: 2 / 12;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+  margin-bottom: 3em;
+}
+
+.card-container {
+  background: #f0f0f0;
+  padding: 20px;
+  height: 15em;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  background-color:chartreuse;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #555;
+}
+
+/* Merch Section */
+.merch-container {
+  grid-column: 2 / 12;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.merch-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.merch-image {
+  flex: 1;
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.merch-image img {
+  width:500px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 4px;
+}
+.merch-text{
+  font-weight: bold;
+  display: flex; 
+  align-self: center;
+  font-size: 2rem;
+  margin-bottom: 3em;
+}
+
+.merch-description {
+  flex: 2;
+  text-align: left;
+}
+
+.merch-description p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.merch-button {
+  background-color: chartreuse;
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.merch-button:hover {
+  background-color: #555;
 }
 
 
-
-
-.nav-list a:hover {
-  background-color: #61f46d;
-  border-radius: 5px;
-
+/* Footer */
+.footer-container {
+  grid-column: 1 / -1;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
+/* Media Queries */
+@media (max-width: 1200px) {
+  .specials-container, .merch-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 768px) {
-  .nav-list {
-    flex-direction: column;
+  .specials-container, .merch-cards {
+    grid-template-columns: 1fr;
   }
 
-  .nav-list li {
-    margin: 0.5rem 0;
+  .nav-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    font-size: 36px;
+  }
+
+  .merch-text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+    font-size: 24px;
+  }
+
+  .card-container {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .merch-text {
+    font-size: 24px;
   }
 }
