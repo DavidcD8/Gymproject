@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-function Contact() {
+function ContactUs() {
   return (
     <div className="contact-container">
       <h2>Contact Us</h2>
@@ -24,4 +24,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactUs;

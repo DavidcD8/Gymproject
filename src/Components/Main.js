@@ -1,25 +1,33 @@
+// Main.js
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Hero from './Hero';
-import Specials from './Specials';
-import Merch from './Merch';
-import Contact from './Contact';
-import '../App.css';
+import Hero from '../Components/Hero';
+import Promotions from './Promotions';
+import About from '../Components/About';
+import ContactUs from '../Components/ContactUs';
+import Merch from '../Components/Merch';
+import Membership from '../Components/Membership';
+
+
 
 function Main() {
   return (
     <div className="grid-container">
-       <Routes>
+      <Routes>
         <Route path="/" element={
           <>
             <Hero />
-            <Specials />
+            <Promotions />
+            <Membership />
             <Merch />
-          </>
+            <About />
+          
+           </>
         } />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactUs />} />
+
       </Routes>
-     </div>
+    </div>
   );
 }
 
