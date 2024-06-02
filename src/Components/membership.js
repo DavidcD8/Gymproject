@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 function Membership() {
   return (
@@ -16,7 +17,7 @@ function Membership() {
             <li>Feature 4</li>
             <li>Feature 5</li>
           </ul>
-          <button className="membership-card-button">Join Now</button>
+          <Link to="/membershipinformation" className="membership-card-button">Learn More</Link>
         </div>
         <div className="membership-card-container">
           <div className="membership-card-price">€20.99</div>
@@ -28,7 +29,7 @@ function Membership() {
             <li>Feature 4</li>
             <li>Feature 5</li>
           </ul>
-          <button className="membership-card-button">Join Now</button>
+          <Link to="/membershipinformation" className="membership-card-button">Learn More</Link>
         </div>
         <div className="membership-card-container">
           <div className="membership-card-price">€30.99</div>
@@ -40,7 +41,7 @@ function Membership() {
             <li>Feature 4</li>
             <li>Feature 5</li>
           </ul>
-          <button className="membership-card-button">Join Now</button>
+          <Link to="/membershipinformation" className="membership-card-button">Learn More</Link>
         </div>
       </div>
     </section>

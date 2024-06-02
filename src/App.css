@@ -355,21 +355,16 @@ nav {
 }
 
 .membership-card-button {
-  background-color: white;
-  font-weight: bold;
-  border-radius: 4px;
-  font-family: 'Barlow Condensed', 'Arial Narrow', 'Roboto Condensed', 'Open Sans Condensed', sans-serif;
-  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
-  padding: 7px 20px;
-  cursor: pointer;
-  margin-top: auto;
-  font-size: 18px;
+  color: white;
+  font-size: 15px;
+  text-decoration: underline;
 }
 
 .membership-card-button:hover {
-  background-color: rgb(214, 164, 13);
-  color: white;
+
+  color: rgb(214, 164, 13);
   transition: 0.3s ease-in-out, 0.3s ease-in-out;
 }
 
@@ -385,7 +380,73 @@ nav {
   color: white;
   font-size: 14px;
 }
+/* MembershipInformation Section */
+.MembershipInformation-section {
+  grid-column: 1 / span 12;
+  background-color: #f7f7f7;
+  padding: 40px;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+.membership-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#membership-table-header {
+  font-weight: 800;
+  letter-spacing: 0.031rem;
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  font-family: 'Roboto Slab', 'Courier New', serif;
+  color: #565a5c;
+  margin-bottom: 20px;
+}
+
+.membership-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.membership-table th,
+.membership-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.membership-table-heading-basic,
+.membership-table-heading-standard,
+.membership-table-heading-premium {
+  border: 1px solid gainsboro;
+  background: linear-gradient(330.17deg, rgb(10, 7, 14), rgb(99, 24, 185));
+  color: white;
+  font-family: 'Roboto Slab', 'Courier New', serif;
+  padding: 10px 40px;
+}
+
+button {
+  background-color: rgb(214, 164, 13);
+  font-weight: bold;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(148, 112, 5);
+}
+
+ 
 
 /* Trainers Section */
 .trainers-section {
@@ -494,6 +555,19 @@ nav {
     font-size: 20px;
      padding: 0;
   }
+  .MembershipInformation-section {
+    padding: 20px;
+  }
+
+  .membership-table-heading-basic,
+  .membership-table-heading-standard,
+  .membership-table-heading-premium {
+    padding: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -526,5 +600,31 @@ nav {
     font-family: 'Barlow Condensed', 'Arial Narrow', 'Roboto Condensed', 'Open Sans Condensed', sans-serif;
     font-size: 20px;
      padding: 0;
+  }
+
+  .MembershipInformation-section {
+    grid-column: 1 / span 12;
+    background-color: #f7f7f7;
+    padding: 40px;
+    display: flex;
+    font-size:15px;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #membership-table-header {
+    font-weight: 800;
+    letter-spacing: 0.031rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', 'Courier New', serif;
+    color: #565a5c;
+    margin-bottom: 20px;
+  }
+
+  button {
+     font-size: 10px;
+    padding: 3px 7px;
   }
 }

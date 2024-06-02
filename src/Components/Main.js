@@ -7,6 +7,7 @@ import About from '../Components/About';
 import ContactUs from '../Components/ContactUs';
 import Merch from '../Components/Merch';
 import Membership from '../Components/Membership';
+import MembershipInformation from '../Components/MembershipInformation';
 
 
 
@@ -25,6 +26,7 @@ function Main() {
            </>
         } />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/membershipinformation" element={<MembershipInformation />} />
 
       </Routes>
     </div>
