@@ -150,8 +150,7 @@ nav {
 .merch-button:hover {
   background-color: rgb(148, 112, 5);
   color: rgb(255, 255, 255);
- 
- 
+
 }
 
 
@@ -490,6 +489,11 @@ nav {
   .specials-header {
     font-size: 2rem;
   }
+  .intro-text {
+    font-family: 'Barlow Condensed', 'Arial Narrow', 'Roboto Condensed', 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+     padding: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -516,5 +520,11 @@ nav {
     gap: 50px;
     width: 100%;
     padding: 10px;
+  }
+
+  .intro-text {
+    font-family: 'Barlow Condensed', 'Arial Narrow', 'Roboto Condensed', 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+     padding: 0;
   }
 }
