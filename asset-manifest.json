@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Gymproject/static/css/main.58e90044.css",
-    "main.js": "/Gymproject/static/js/main.06ddcfc3.js",
+    "main.css": "/Gymproject/static/css/main.7ee8b80a.css",
+    "main.js": "/Gymproject/static/js/main.be64ac58.js",
     "static/js/453.c3c1ea4e.chunk.js": "/Gymproject/static/js/453.c3c1ea4e.chunk.js",
     "static/media/merch.jpg": "/Gymproject/static/media/merch.0f63c8c5c693fae8ce6f.jpg",
     "static/media/hero.jpg": "/Gymproject/static/media/hero.a8e9f550e94bfbf52421.jpg",
     "index.html": "/Gymproject/index.html",
-    "main.58e90044.css.map": "/Gymproject/static/css/main.58e90044.css.map",
-    "main.06ddcfc3.js.map": "/Gymproject/static/js/main.06ddcfc3.js.map",
+    "main.7ee8b80a.css.map": "/Gymproject/static/css/main.7ee8b80a.css.map",
+    "main.be64ac58.js.map": "/Gymproject/static/js/main.be64ac58.js.map",
     "453.c3c1ea4e.chunk.js.map": "/Gymproject/static/js/453.c3c1ea4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58e90044.css",
-    "static/js/main.06ddcfc3.js"
+    "static/css/main.7ee8b80a.css",
+    "static/js/main.be64ac58.js"
   ]
 }
